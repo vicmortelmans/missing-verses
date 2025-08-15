@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+.book, .chapter, .verse {
+    height: 20px;
+    padding: 3px;
+    border: solid 1px black;
+    text-align: center;
+}
+.book {
+    width: 516px;
+}
+.chapter {
+    width: 82px;
+}
+.verse {
+    width: 20px;
+}
+/* for the color bands: */
+.verse {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* top group goes up, bottom group goes down */
+  background: white;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.stack.top {
+  align-items: stretch;
+}
+
+.stack.bottom {
+  align-items: stretch;
+}
+
+.band {
+  height: 10px;
+  width: 100%;
+  background: lightblue;
+  border-bottom: 1px solid #aaa;
+}
+
+.stack.bottom .band {
+  background: lightcoral;
+}

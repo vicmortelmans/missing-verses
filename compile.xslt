@@ -11,20 +11,38 @@
             <xsl:if test="not($bible)"><xsl:message>No text for <xsl:value-of select="current-grouping-key()"/> (can <xsl:value-of select="current-group()[1]/canbook"/>)</xsl:message></xsl:if>
             <bibleref>
                 <xsl:copy-of select="current-group()[1]/osisbook"/>
+                <xsl:copy-of select="current-group()[1]/canbook"/>
                 <xsl:copy-of select="current-group()[1]/chapter"/>
                 <xsl:copy-of select="current-group()[1]/verse"/>
-                <verse><xsl:if test="$bible"><xsl:value-of select="$bible/Scripture"/></xsl:if></verse>
-                <xsl:for-each select="current-group()">
-                    <in>
-                        <xsl:copy-of select="liturgical_day"/>
-                        <xsl:copy-of select="day"/>
-                        <xsl:copy-of select="form"/>
-                        <xsl:copy-of select="reading"/>
-                        <xsl:copy-of select="obligation"/>
-                        <xsl:copy-of select="abridged"/>
-                        <xsl:copy-of select="skipped"/>
-                    </in>
-                </xsl:for-each>
+                <text><xsl:if test="$bible"><xsl:value-of select="$bible/Scripture"/></xsl:if></text>
+                <form form="eo">
+                    <xsl:for-each select="current-group()[form='eo']" >
+                        <xsl:sort select="liturgical_day"/>
+                        <in>
+                            <xsl:copy-of select="liturgical_day"/>
+                            <xsl:copy-of select="day"/>
+                            <xsl:copy-of select="form"/>
+                            <xsl:copy-of select="reading"/>
+                            <xsl:copy-of select="obligation"/>
+                            <xsl:copy-of select="abridged"/>
+                            <xsl:copy-of select="skipped"/>
+                        </in>
+                    </xsl:for-each>
+                </form>
+                <form form="of">
+                    <xsl:for-each select="current-group()[form='of']" >
+                        <xsl:sort select="liturgical_day"/>
+                        <in>
+                            <xsl:copy-of select="liturgical_day"/>
+                            <xsl:copy-of select="day"/>
+                            <xsl:copy-of select="form"/>
+                            <xsl:copy-of select="reading"/>
+                            <xsl:copy-of select="obligation"/>
+                            <xsl:copy-of select="abridged"/>
+                            <xsl:copy-of select="skipped"/>
+                        </in>
+                    </xsl:for-each>
+                </form>
             </bibleref>
         </xsl:for-each-group>
       </xsl:copy>
