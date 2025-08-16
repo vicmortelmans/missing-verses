@@ -17,7 +17,7 @@
                 <text><xsl:if test="$bible"><xsl:value-of select="$bible/Scripture"/></xsl:if></text>
                 <form form="eo">
                     <xsl:for-each select="current-group()[form='eo']" >
-                        <xsl:sort select="liturgical_day"/>
+                        <xsl:sort select="skipped"/>
                         <in>
                             <xsl:copy-of select="liturgical_day"/>
                             <xsl:copy-of select="day"/>
@@ -31,7 +31,7 @@
                 </form>
                 <form form="of">
                     <xsl:for-each select="current-group()[form='of']" >
-                        <xsl:sort select="liturgical_day"/>
+                        <xsl:sort select="skipped"/>
                         <in>
                             <xsl:copy-of select="liturgical_day"/>
                             <xsl:copy-of select="day"/>

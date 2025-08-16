@@ -13,14 +13,14 @@
       <xsl:variable name="verses" select="doc(concat('http://localhost:8080/yql/bibleref?language=nl&amp;xml=true&amp;bibleref=',ref))/query/results/biblerefs/bibleref"/>
       <xsl:apply-templates select="$verses">
           <xsl:with-param name="data" select="."/>
-          <xsl:with-param name="skipped" select="'no'"/>
+          <xsl:with-param name="skipped" select="'n'"/>
       </xsl:apply-templates>
       <xsl:if test="skipped != ''">
           <xsl:message>Parsing skipped passage <xsl:value-of select="skipped"/></xsl:message>
           <xsl:variable name="verses" select="doc(concat('http://localhost:8080/yql/bibleref?language=nl&amp;xml=true&amp;bibleref=',skipped))/query/results/biblerefs/bibleref"/>
           <xsl:apply-templates select="$verses">
               <xsl:with-param name="data" select="."/>
-              <xsl:with-param name="skipped" select="'yes'"/>
+              <xsl:with-param name="skipped" select="'y'"/>
           </xsl:apply-templates>
       </xsl:if>
   </xsl:template>

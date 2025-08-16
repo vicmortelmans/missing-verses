@@ -3,14 +3,18 @@ body {
     flex-wrap: wrap;
     gap: 3px;
 }
-.book, .chapter, .verse {
+.chapter, .verse {
     height: 20px;
     padding: 3px;
     border: solid 1px black;
     text-align: center;
 }
 .book {
-    width: 516px;
+    width: 100%;
+    height: 20px;
+    padding: 3px;
+    text-align: left;
+    margin-top: 20px;
 }
 .chapter {
     width: 82px;
@@ -20,32 +24,51 @@ body {
 }
 /* for the color bands: */
 .verse {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* top group goes up, bottom group goes down */
+  position: relative;
   background: white;
+  /* Ensure box creates a stacking context */
+  z-index: 0;
 }
 
-.stack {
+/* Top stack starts from the top edge */
+.top-stack {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
+  max-height: 50%; /* Prevent crossing center */
+  overflow: hidden; /* Hide any excess bands */
+  z-index: -1; /* put behind the content */
 }
 
-.stack.top {
-  align-items: stretch;
-}
-
-.stack.bottom {
-  align-items: stretch;
+/* Bottom stack starts from the bottom edge */
+.bottom-stack {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  max-height: 50%; /* Prevent crossing center */
+  overflow: hidden;
+  z-index: -1; /* put behind the content */
 }
 
 .band {
-  height: 10px;
-  width: 100%;
-  background: lightblue;
-  border-bottom: 1px solid #aaa;
+  width: 26px;
+  height: 5px;
+  background: green;
 }
 
-.stack.bottom .band {
-  background: lightcoral;
+.bottom-stack .band {
+  background: green;
+}
+.band.optional {
+  background: palegreen;
+}
+.band.abridged {
+  background: palegreen;
+}
+.band.skipped {
+  background: red;
 }

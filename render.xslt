@@ -28,17 +28,31 @@
               <div class="chapter"><b><xsl:value-of select="Chapter"/></b></div>
           </xsl:if>
           <div class="verse">
-              <xsl:value-of select="Verse"/>
-              <div class="stack top">
+              <div class="top-stack">
                   <xsl:for-each select="$verse/form[@form='eo']/in">
-                      <div class="band"/>
+                      <div>
+                          <xsl:attribute name="class">
+                              <xsl:text>band</xsl:text>
+                              <xsl:if test="obligation='n'"> optional</xsl:if>
+                              <xsl:if test="abridged='y'"> abridged</xsl:if>
+                              <xsl:if test="skipped='y'"> skipped</xsl:if>
+                          </xsl:attribute>
+                      </div>
                   </xsl:for-each>
               </div>
-              <div class="stack bottom">
+              <div class="bottom-stack">
                   <xsl:for-each select="$verse/form[@form='of']/in">
-                      <div class="band"/>
+                      <div>
+                          <xsl:attribute name="class">
+                              <xsl:text>band</xsl:text>
+                              <xsl:if test="obligation='n'"> optional</xsl:if>
+                              <xsl:if test="abridged='y'"> abridged</xsl:if>
+                              <xsl:if test="skipped='y'"> skipped</xsl:if>
+                          </xsl:attribute>
+                      </div>
                   </xsl:for-each>
               </div>
+              <xsl:value-of select="Verse"/>
           </div>
       </xsl:if>
   </xsl:template>
