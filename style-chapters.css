@@ -1,0 +1,47 @@
+body {
+  font-size: 14pt;
+  max-width: 640px;
+  margin: auto;
+  line-height: 1.8;
+  padding: 20px;
+}
+p.chapter {
+  border: solid 1pt #ccc;
+  background-color: #eee;
+  padding: 8pt;
+}
+a {
+  margin-right: 10px;
+}
+div {
+  text-align: center;
+}
+.title {
+  font-size: 28pt;
+  font-weight: bold;
+}
+sup {
+  color: #900;
+  font-weight: bold;
+}
+.page {
+  page-break-before: always;
+}
+/* Highlighting */
+.sentence {
+  transition: background-color 0.2s;
+}
+.highlight-red    { background-color: #FA6B84; }  /* pale red */
+.highlight-palegreen   { background-color: #DAFFD5; } /* pale green */
+.highlight-green  { background-color: #ACF3AE; } /* green */
+
+.buttons {
+  margin-bottom: 1em;
+}
+button {
+  margin-right: 0.5em;
+  background-color: #ACF3AE;  /* green */
+}
+button.optional {
+  background-color: #DAFFD5; /* pale green */
+}

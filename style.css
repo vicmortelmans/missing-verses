@@ -11,10 +11,6 @@ body {
 }
 .book {
     width: 100%;
-    height: 20px;
-    padding: 3px;
-    text-align: left;
-    margin-top: 20px;
 }
 .chapter {
     width: 82px;
@@ -22,6 +18,9 @@ body {
 .verse {
     width: 20px;
 }
+/*.text {
+    display: none;
+}*/
 /* for the color bands: */
 .verse {
   position: relative;
@@ -57,18 +56,18 @@ body {
 .band {
   width: 26px;
   height: 5px;
-  background: green;
+  background: #ACF3AE; /* green */
 }
 
 .bottom-stack .band {
-  background: green;
-}
+  background: #ACF3AE; /* green */}
+
 .band.optional {
-  background: palegreen;
+  background: #DAFFD5; /* pale green */
 }
 .band.abridged {
-  background: palegreen;
+  background: #DAFFD5; /* pale green */
 }
 .band.skipped {
-  background: red;
+  background: #FA6B84; /* pale red */
 }

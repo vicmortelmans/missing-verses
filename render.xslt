@@ -23,9 +23,11 @@
           <xsl:message><xsl:value-of select="$chapter/bibleref[1]/osisbook"/> <xsl:value-of select="Chapter"/>:<xsl:value-of select="Verse"/></xsl:message>
           <xsl:if test="Verse=1">
               <xsl:if test="$chapter=$chapter/../*[1]"><!-- test if this is the first chapter of a book that is printed, not necessarily chapter 1 -->
-                  <div class="book"><b><xsl:value-of select="$chapter/bibleref[1]/osisbook"/></b></div>
+                  <div class="book"><h1><xsl:value-of select="$chapter/bibleref[1]/spoken"/></h1></div>
               </xsl:if>
-              <div class="chapter"><b><xsl:value-of select="Chapter"/></b></div>
+              <a href="html/{$chapter/bibleref[1]/osisbook}-{Chapter}.html" target="_blank">
+                  <div class="chapter"><b><xsl:value-of select="Chapter"/></b></div>
+              </a>
           </xsl:if>
           <div class="verse">
               <div class="top-stack">
@@ -52,8 +54,15 @@
                       </div>
                   </xsl:for-each>
               </div>
-              <xsl:value-of select="Verse"/>
+              <i><xsl:value-of select="Verse"/></i>
           </div>
+          <!--div>
+              <xsl:attribute name="class">
+                  <xsl:text>text </xsl:text>
+                  <xsl:value-of select="concat(Book_ID,'-',Chapter)"/>
+              </xsl:attribute>
+              <xsl:value-of select="Scripture"/>
+          </div-->
       </xsl:if>
   </xsl:template>
 </xsl:stylesheet>

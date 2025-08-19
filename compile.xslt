@@ -14,11 +14,14 @@
                 <xsl:copy-of select="current-group()[1]/canbook"/>
                 <xsl:copy-of select="current-group()[1]/chapter"/>
                 <xsl:copy-of select="current-group()[1]/verse"/>
+                <xsl:copy-of select="current-group()[1]/spoken"/>
+                <xsl:copy-of select="current-group()[1]/localbook"/>
                 <text><xsl:if test="$bible"><xsl:value-of select="$bible/Scripture"/></xsl:if></text>
                 <form form="eo">
                     <xsl:for-each select="current-group()[form='eo']" >
                         <xsl:sort select="skipped"/>
                         <in>
+                            <xsl:copy-of select="reading_id"/>
                             <xsl:copy-of select="liturgical_day"/>
                             <xsl:copy-of select="day"/>
                             <xsl:copy-of select="form"/>
@@ -33,6 +36,7 @@
                     <xsl:for-each select="current-group()[form='of']" >
                         <xsl:sort select="skipped"/>
                         <in>
+                            <xsl:copy-of select="reading_id"/>
                             <xsl:copy-of select="liturgical_day"/>
                             <xsl:copy-of select="day"/>
                             <xsl:copy-of select="form"/>

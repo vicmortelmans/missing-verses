@@ -14,6 +14,7 @@
       <xsl:apply-templates select="$verses">
           <xsl:with-param name="data" select="."/>
           <xsl:with-param name="skipped" select="'n'"/>
+          <xsl:with-param name="readingreference" select="ref"/>
       </xsl:apply-templates>
       <xsl:if test="skipped != ''">
           <xsl:message>Parsing skipped passage <xsl:value-of select="skipped"/></xsl:message>
@@ -21,12 +22,14 @@
           <xsl:apply-templates select="$verses">
               <xsl:with-param name="data" select="."/>
               <xsl:with-param name="skipped" select="'y'"/>
+              <xsl:with-param name="readingreference" select="ref"/>
           </xsl:apply-templates>
       </xsl:if>
   </xsl:template>
   <xsl:template match="bibleref">
       <xsl:param name="data"/>
       <xsl:param name="skipped"/>
+      <xsl:param name="readingreference"/>
       <xsl:copy>
           <xsl:copy-of select="$data/liturgical_day"/>
           <xsl:copy-of select="$data/day"/>
@@ -40,6 +43,9 @@
           <xsl:copy-of select="chapter"/>
           <xsl:copy-of select="verse"/>
           <xsl:copy-of select="osisref"/>
+          <xsl:copy-of select="spoken"/>
+          <xsl:copy-of select="localbook"/>
+          <reading_id><xsl:value-of select="concat($data/form,'.',$data/liturgical_day,'.',$readingreference)"/></reading_id>
       </xsl:copy>
   </xsl:template>
 </xsl:stylesheet>
