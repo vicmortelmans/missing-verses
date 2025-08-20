@@ -56,18 +56,18 @@ body {
 .band {
   width: 26px;
   height: 5px;
-  background: #ACF3AE; /* green */
+  background: #CBFFA9; /* green */
 }
 
 .bottom-stack .band {
-  background: #ACF3AE; /* green */}
+  background: #CBFFA9; /* green */}
 
 .band.optional {
-  background: #DAFFD5; /* pale green */
+  background: #FFFEC4; /* yellow */
 }
 .band.abridged {
-  background: #DAFFD5; /* pale green */
+  background: #FFD6A5; /* orange */
 }
 .band.skipped {
-  background: #FA6B84; /* pale red */
+  background: #FF9B9B; /* red */
 }

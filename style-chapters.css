@@ -1,9 +1,23 @@
 body {
   font-size: 14pt;
+}
+.content {
   max-width: 640px;
   margin: auto;
   line-height: 1.8;
-  padding: 20px;
+  margin-left: 350px; /* leave space so text isn’t hidden behind buttons */
+  padding: 1em;
+}
+.buttons {
+  margin-bottom: 1em;
+  position: fixed;       /* stays put when scrolling */
+  top: 50%;              /* vertically centered reference */
+  left: 0;               /* stick to left edge */
+  transform: translateY(-50%); /* shift back half height */
+  display: flex;
+  flex-direction: column;  /* stack vertically */
+  gap: 0.5em;              /* spacing between buttons */
+  max-width: 350px;
 }
 p.chapter {
   border: solid 1pt #ccc;
@@ -31,17 +45,19 @@ sup {
 .sentence {
   transition: background-color 0.2s;
 }
-.highlight-red    { background-color: #FA6B84; }  /* pale red */
-.highlight-palegreen   { background-color: #DAFFD5; } /* pale green */
-.highlight-green  { background-color: #ACF3AE; } /* green */
+.any  { background-color: #EEEEEE; } /* light gray (overruled by other colors! */
+.highlight-red    { background-color: #FF9B9B; }
+.highlight-orange   { background-color: #FFD6A5; }
+.highlight-yellow   { background-color: #FFFEC4; }
+.highlight-green  { background-color: #CBFFA9; }
 
-.buttons {
-  margin-bottom: 1em;
-}
 button {
   margin-right: 0.5em;
-  background-color: #ACF3AE;  /* green */
+  background-color: #CBFFA9;
+}
+button.active {
+  font-weight: bold;
 }
 button.optional {
-  background-color: #DAFFD5; /* pale green */
+  background-color: #FFFEC4;
 }
