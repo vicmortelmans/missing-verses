@@ -4,7 +4,7 @@
   <xsl:output method="html" indent="yes"/>
 
   <xsl:template match="/">
-      <xsl:apply-templates select="data/book[@canbook &gt; 33][@canbook &lt; 41]/chapter"/><!-- testing limited number of books -->
+      <xsl:apply-templates select="data/book/chapter"/><!-- testing limited number of books -->
   </xsl:template>
   <xsl:template match="chapter">
       <xsl:variable name="book" select="bibleref[1]/osisbook"/>
@@ -17,7 +17,7 @@
           </head>
           <body>
             <xsl:variable name="ofdays">
-                <xsl:for-each-group select="bibleref/form[@form='of']/in" group-by="reading_id">
+                <xsl:for-each-group select="bibleref/form[@form='of']/in[skipped='n']" group-by="reading_id">
                     <xsl:sort select="reading"/>
                     <xsl:sequence select="current-group()[1]"/>
                 </xsl:for-each-group>
@@ -55,15 +55,14 @@
             <div class="content">
                 <div>
                   <p class="title">De Bijbel<br/>Vertaling Petrus Canisius</p>
-                  <p><a href="http://www.gelovenleren.net">gelovenleren.net</a></p>
                 </div>
                 <!-- Book title -->
-                <h1 id="{$book}" class="page">
+                <h2 id="{$book}" class="page">
                     <xsl:value-of select="$book-long"/>, hoofdstuk <xsl:value-of select="bibleref[1]/chapter"/>
-                </h1>
+                </h2>
                 <p>
-                    <xsl:variable name="previous-chapter" select="preceding-sibling::chapter[1]"/>
-                    <xsl:variable name="next-chapter" select="following-sibling::chapter[1]"/>
+                    <xsl:variable name="previous-chapter" select="preceding::chapter[bibleref][1]"/>
+                    <xsl:variable name="next-chapter" select="following::chapter[bibleref][1]"/>
                     <xsl:if test="$previous-chapter">
                         <a href="{$previous-chapter/bibleref[1]/osisbook}-{$previous-chapter/bibleref[1]/chapter}.html">Vorig hoofdstuk</a>
                     </xsl:if>
@@ -79,6 +78,7 @@
                   <span class="sentence">
                       <xsl:variable name="views">
                           <xsl:if test="form/in">any </xsl:if>
+                          <xsl:if test="form[@form='eo']/in and not(form[@form='of']/in)">censored </xsl:if>
                           <xsl:for-each select="form[@form='of']/in">
                               <xsl:variable name="color">
                                   <xsl:choose>
@@ -106,6 +106,7 @@
                   </span>
                   <xsl:text> </xsl:text>
                 </xsl:for-each>
+                <p><a href="http://www.gelovenleren.net">gelovenleren.net</a></p>
             </div>
             <script>
                   const sentences = document.querySelectorAll(".sentence");
@@ -132,6 +133,9 @@
                           }
                           if (m === "any") {
                             s.classList.add("any");
+                          }
+                          if (m === "censored") {
+                            s.classList.add("censored");
                           }
                         });
                       });

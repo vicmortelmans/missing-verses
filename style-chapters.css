@@ -46,6 +46,12 @@ sup {
   transition: background-color 0.2s;
 }
 .any  { background-color: #EEEEEE; } /* light gray (overruled by other colors! */
+.censored { 
+  text-decoration: underline;
+  text-decoration-color: #FF9B9B;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px; /* pushes underline down */
+}
 .highlight-red    { background-color: #FF9B9B; }
 .highlight-orange   { background-color: #FFD6A5; }
 .highlight-yellow   { background-color: #FFFEC4; }

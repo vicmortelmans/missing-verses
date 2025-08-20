@@ -10,7 +10,7 @@
               <link rel="stylesheet" href="style.css"/>
           </head>
           <body>
-              <xsl:apply-templates select="//bibleref[canbook &gt; 33][canbook &lt; 41]"/><!-- testing limited number of books -->
+              <xsl:apply-templates select="//bibleref"/><!-- testing limited number of books -->
           </body>
       </html>
   </xsl:template>
