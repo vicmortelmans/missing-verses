@@ -10,7 +10,63 @@
               <link rel="stylesheet" href="style.css"/>
           </head>
           <body>
-              <xsl:apply-templates select="//bibleref"/><!-- testing limited number of books -->
+              <div>
+                <p class="title">De Bijbel<br/>Vertaling Petrus Canisius</p>
+              </div>
+              <p>Deze website geeft een overzicht van de bijbelteksten die worden gebruikt in de lezingen van de tridentijnse mis (de "Buitengewone vorm van de Latijnse ritus") en van het lectionarium (de "Gewone vorm van de Latijnse ritus").</p>
+              <h2>Legende</h2>
+              <p>
+                  <div class="verse" style="display:inline-block;">
+                      <div class="top-stack">
+                          <div class="band">1</div>
+                      </div>
+                  </div> Dit vers wordt gelezen in de tridentijnse mis
+              </p>
+              <p>
+                  <div class="verse" style="display:inline-block;">
+                      <div class="top-stack">
+                          <div class="band optional">1</div>
+                      </div>
+                  </div> Dit vers wordt gelezen in de tridentijnse mis op een weekdag
+              </p>
+              <p>
+                  <div class="verse" style="display:inline-block;">
+                      <div class="top-stack">
+                          <div class="band skipped">1</div>
+                      </div>
+                  </div> Dit vers wordt overgeslagen in de tridentijnse mis
+              </p>
+              <p>
+                  <div class="verse" style="display:inline-block;">
+                      <div class="bottom-stack">
+                          <div class="band">1</div>
+                      </div>
+                  </div> Dit vers wordt gelezen in het lectionarium
+              </p>
+              <p>
+                  <div class="verse" style="display:inline-block;">
+                      <div class="bottom-stack">
+                          <div class="band optional">1</div>
+                      </div>
+                  </div> Dit vers wordt gelezen in het lectionarium op een weekdag
+              </p>
+              <p>
+                  <div class="verse" style="display:inline-block;">
+                      <div class="bottom-stack">
+                          <div class="band abridged">1</div>
+                      </div>
+                  </div> Dit vers wordt overgeslagen in het lectionarium in de verkorte versie van de lezing
+              </p>
+              <p>
+                  <div class="verse" style="display:inline-block;">
+                      <div class="bottom-stack">
+                          <div class="band skipped">1</div>
+                      </div>
+                  </div> Dit vers wordt overgeslagen in het lectionarium
+              </p>
+              <div class="content">
+                  <xsl:apply-templates select="//bibleref"/><!-- testing limited number of books -->
+              </div>
           </body>
       </html>
   </xsl:template>

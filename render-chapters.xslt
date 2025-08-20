@@ -29,6 +29,7 @@
                 </xsl:for-each-group>
             </xsl:variable>
             <div class="buttons">
+                <h2>Selecteer een lezing</h2>
                 <xsl:if test="exists($ofdays/in)">
                     <p>Lectionarium:</p>
                 </xsl:if>
@@ -51,6 +52,9 @@
                         <xsl:value-of select="day"/> (<xsl:value-of select="chapterversereference"/>)
                     </button>
                 </xsl:for-each>
+                <h2>Legende</h2>
+                <p><span class="any">Komt voor in een lezing</span> | <span class="censored">Komt voor in Tridentijnse Mis, maar niet in Lectionarium</span> | <span class="highlight-green">Tekst van de geselecteerde lezing</span> | <span class="highlight-orange">Tekst van de geselecteerde lezing die wegvalt in de korte versie</span> | <span class="highlight-red">Tekst die in de lezing wordt overgeslagen</span>.</p>
+                <p>De lezingen die links worden gemarkeerd in geel, vallen op weekdagen.</p>
             </div>
             <div class="content">
                 <div>
@@ -77,7 +81,7 @@
                   <sup><xsl:value-of select="verse"/><xsl:text> </xsl:text></sup>
                   <span class="sentence">
                       <xsl:variable name="views">
-                          <xsl:if test="form/in">any </xsl:if>
+                          <xsl:if test="form/in[not(skipped='y')]">any </xsl:if>
                           <xsl:if test="form[@form='eo']/in and not(form[@form='of']/in)">censored </xsl:if>
                           <xsl:for-each select="form[@form='of']/in">
                               <xsl:variable name="color">
@@ -111,6 +115,19 @@
             <script>
                   const sentences = document.querySelectorAll(".sentence");
                   const buttons = document.querySelectorAll("button[data-view]");
+
+                  sentences.forEach(s => {
+                    // look through all view:color pairs
+                    const mappings = s.dataset.views.split(" ");
+                    mappings.forEach(m => {
+                      if (m === "any") {
+                        s.classList.add("any");
+                      }
+                      if (m === "censored") {
+                        s.classList.add("censored");
+                      }
+                    });
+                  });
 
                   buttons.forEach(btn => {
                     btn.addEventListener("click", () => {
