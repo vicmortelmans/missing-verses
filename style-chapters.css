@@ -24,6 +24,9 @@ p.chapter {
   background-color: #eee;
   padding: 8pt;
 }
+p.legenda {
+  line-height: 1.8;
+}
 a {
   margin-right: 10px;
 }

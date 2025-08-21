@@ -2,6 +2,8 @@
 <xsl:stylesheet version="2.0" 
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:output method="html" indent="yes"/>
+  <xsl:variable name="eoi18n" select="doc('Catholic Liturgical Days - extraordinary form.xml')/data/*"/>
+  <xsl:variable name="ofi18n" select="doc('Catholic Liturgical Days - ordinary form.xml')/data/*"/>
 
   <xsl:template match="/">
       <xsl:apply-templates select="data/book/chapter"/><!-- testing limited number of books -->
@@ -40,7 +42,29 @@
                         <xsl:if test="obligation='n'">
                             <xsl:attribute name="class">optional</xsl:attribute>
                         </xsl:if>
-                        <xsl:value-of select="day"/> (<xsl:value-of select="chapterversereference"/>)
+                        <xsl:variable name="day">
+                          <xsl:variable name="ref">
+                            <xsl:choose>
+                              <xsl:when test="contains(liturgical_day,'.')">
+                                <xsl:value-of select="concat('of.',substring-before(liturgical_day,'.'))"/>
+                              </xsl:when>
+                              <xsl:otherwise>
+                                <xsl:value-of select="concat('of.',liturgical_day)"/>
+                              </xsl:otherwise>
+                            </xsl:choose>
+                          </xsl:variable>
+                          <xsl:variable name="i18n" select="$ofi18n[ref=$ref]"/>
+                          <xsl:choose>
+                            <xsl:when test="$i18n">
+                              <xsl:value-of select="$i18n/nl"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                              <xsl:message>no nl for <xsl:value-of select="$ref"/></xsl:message>
+                              <xsl:value-of select="day"/>
+                            </xsl:otherwise>
+                          </xsl:choose>
+                        </xsl:variable>
+                        <xsl:value-of select="$day"/> (<xsl:value-of select="chapterversereference"/>)
                     </button>
                 </xsl:for-each>
                 <xsl:if test="exists($eodays/in)">
@@ -49,12 +73,37 @@
                 <xsl:for-each select="$eodays/in">
                     <!--xsl:sort select="position()" data-type="number" order="descending"/-->
                     <button data-view="{reading_id}">
-                        <xsl:value-of select="day"/> (<xsl:value-of select="chapterversereference"/>)
+                        <xsl:if test="obligation='n'">
+                            <xsl:attribute name="class">optional</xsl:attribute>
+                        </xsl:if>
+                        <xsl:variable name="day">
+                          <xsl:variable name="ref">
+                            <xsl:choose>
+                              <xsl:when test="contains(liturgical_day,'.')">
+                                <xsl:value-of select="concat('eo.',substring-before(liturgical_day,'.'))"/>
+                              </xsl:when>
+                              <xsl:otherwise>
+                                <xsl:value-of select="concat('eo.',liturgical_day)"/>
+                              </xsl:otherwise>
+                            </xsl:choose>
+                          </xsl:variable>
+                          <xsl:variable name="i18n" select="$eoi18n[ref=$ref]"/>
+                          <xsl:choose>
+                            <xsl:when test="$i18n">
+                              <xsl:value-of select="$i18n/nl"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                              <xsl:message>no nl for <xsl:value-of select="$ref"/></xsl:message>
+                              <xsl:value-of select="day"/>
+                            </xsl:otherwise>
+                          </xsl:choose>
+                        </xsl:variable>
+                        <xsl:value-of select="$day"/> (<xsl:value-of select="chapterversereference"/>)
                     </button>
                 </xsl:for-each>
                 <h2>Legende</h2>
-                <p><span class="any">Komt voor in een lezing</span> | <span class="censored">Komt voor in Tridentijnse Mis, maar niet in Lectionarium</span> | <span class="highlight-green">Tekst van de geselecteerde lezing</span> | <span class="highlight-orange">Tekst van de geselecteerde lezing die wegvalt in de korte versie</span> | <span class="highlight-red">Tekst die in de lezing wordt overgeslagen</span>.</p>
-                <p>De lezingen die links worden gemarkeerd in geel, vallen op weekdagen.</p>
+                <p class="legenda"><span class="any">Komt voor in een lezing</span> | <span class="censored">Komt voor in Tridentijnse Mis, maar niet in Lectionarium</span> | <span class="highlight-green">Tekst van de geselecteerde lezing</span> | <span class="highlight-orange">Tekst van de geselecteerde lezing die wegvalt in de korte versie</span> | <span class="highlight-red">Tekst die in de lezing wordt overgeslagen</span>.</p>
+                <p>De lezingen die worden gemarkeerd in geel, vallen op weekdagen.</p>
             </div>
             <div class="content">
                 <div>
