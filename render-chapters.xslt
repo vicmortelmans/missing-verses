@@ -13,7 +13,7 @@
         <html>
           <head>
             <title>Lees de Bijbel in de Mis</title>
-            <link rel="stylesheet" href="../style-chapters.css"/>
+            <link rel="stylesheet" href="style-chapters.css"/>
           </head>
           <body>
             <xsl:variable name="ofdays">

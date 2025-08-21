@@ -75,7 +75,7 @@
           <xsl:if test="ancestor::chapter=ancestor::book/chapter[1]"><!-- test if this is the first chapter of a book that is printed, not necessarily chapter 1 -->
               <div class="book"><h1><xsl:value-of select="spoken"/></h1></div>
           </xsl:if>
-          <a href="html/{osisbook}-{chapter}.html" target="_blank">
+          <a href="{osisbook}-{chapter}.html" target="_blank">
               <div class="chapter"><b><xsl:value-of select="chapter"/></b></div>
           </a>
       </xsl:if>
