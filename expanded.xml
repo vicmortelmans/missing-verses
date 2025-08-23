@@ -2168,15 +2168,15 @@
       <obligation>n</obligation>
       <abridged>n</abridged>
       <skipped>n</skipped>
-      <osisbook>Acts</osisbook>
-      <canbook>44</canbook>
+      <osisbook>Rev</osisbook>
+      <canbook>66</canbook>
       <chapter>14</chapter>
       <verse>1</verse>
-      <osisref>Acts.14.1</osisref>
-      <spoken>handelingen van de apostelen</spoken>
-      <localbook>hand</localbook>
+      <osisref>Rev.14.1</osisref>
+      <spoken>de openbaring van johannes</spoken>
+      <localbook>op</localbook>
       <chapterversereference>14:1-5</chapterversereference>
-      <reading_id>eo-z1228-acts-14-1-5</reading_id>
+      <reading_id>eo-z1228-rev-14-1-5</reading_id>
    </bibleref>
    <bibleref>
       <liturgical_day>Z1228</liturgical_day>
@@ -2186,15 +2186,15 @@
       <obligation>n</obligation>
       <abridged>n</abridged>
       <skipped>n</skipped>
-      <osisbook>Acts</osisbook>
-      <canbook>44</canbook>
+      <osisbook>Rev</osisbook>
+      <canbook>66</canbook>
       <chapter>14</chapter>
       <verse>2</verse>
-      <osisref>Acts.14.2</osisref>
-      <spoken>handelingen van de apostelen</spoken>
-      <localbook>hand</localbook>
+      <osisref>Rev.14.2</osisref>
+      <spoken>de openbaring van johannes</spoken>
+      <localbook>op</localbook>
       <chapterversereference>14:1-5</chapterversereference>
-      <reading_id>eo-z1228-acts-14-1-5</reading_id>
+      <reading_id>eo-z1228-rev-14-1-5</reading_id>
    </bibleref>
    <bibleref>
       <liturgical_day>Z1228</liturgical_day>
@@ -2204,15 +2204,15 @@
       <obligation>n</obligation>
       <abridged>n</abridged>
       <skipped>n</skipped>
-      <osisbook>Acts</osisbook>
-      <canbook>44</canbook>
+      <osisbook>Rev</osisbook>
+      <canbook>66</canbook>
       <chapter>14</chapter>
       <verse>3</verse>
-      <osisref>Acts.14.3</osisref>
-      <spoken>handelingen van de apostelen</spoken>
-      <localbook>hand</localbook>
+      <osisref>Rev.14.3</osisref>
+      <spoken>de openbaring van johannes</spoken>
+      <localbook>op</localbook>
       <chapterversereference>14:1-5</chapterversereference>
-      <reading_id>eo-z1228-acts-14-1-5</reading_id>
+      <reading_id>eo-z1228-rev-14-1-5</reading_id>
    </bibleref>
    <bibleref>
       <liturgical_day>Z1228</liturgical_day>
@@ -2222,15 +2222,15 @@
       <obligation>n</obligation>
       <abridged>n</abridged>
       <skipped>n</skipped>
-      <osisbook>Acts</osisbook>
-      <canbook>44</canbook>
+      <osisbook>Rev</osisbook>
+      <canbook>66</canbook>
       <chapter>14</chapter>
       <verse>4</verse>
-      <osisref>Acts.14.4</osisref>
-      <spoken>handelingen van de apostelen</spoken>
-      <localbook>hand</localbook>
+      <osisref>Rev.14.4</osisref>
+      <spoken>de openbaring van johannes</spoken>
+      <localbook>op</localbook>
       <chapterversereference>14:1-5</chapterversereference>
-      <reading_id>eo-z1228-acts-14-1-5</reading_id>
+      <reading_id>eo-z1228-rev-14-1-5</reading_id>
    </bibleref>
    <bibleref>
       <liturgical_day>Z1228</liturgical_day>
@@ -2240,15 +2240,15 @@
       <obligation>n</obligation>
       <abridged>n</abridged>
       <skipped>n</skipped>
-      <osisbook>Acts</osisbook>
-      <canbook>44</canbook>
+      <osisbook>Rev</osisbook>
+      <canbook>66</canbook>
       <chapter>14</chapter>
       <verse>5</verse>
-      <osisref>Acts.14.5</osisref>
-      <spoken>handelingen van de apostelen</spoken>
-      <localbook>hand</localbook>
+      <osisref>Rev.14.5</osisref>
+      <spoken>de openbaring van johannes</spoken>
+      <localbook>op</localbook>
       <chapterversereference>14:1-5</chapterversereference>
-      <reading_id>eo-z1228-acts-14-1-5</reading_id>
+      <reading_id>eo-z1228-rev-14-1-5</reading_id>
    </bibleref>
    <bibleref>
       <liturgical_day>C1</liturgical_day>
@@ -11762,8 +11762,8 @@
       <osisref>2Kgs.4.25</osisref>
       <spoken>het tweede boek koningen</spoken>
       <localbook>2 kon</localbook>
-      <chapterversereference>4:25-38</chapterversereference>
-      <reading_id>eo-l045-2-kings-4-25-38</reading_id>
+      <chapterversereference>4:25-37</chapterversereference>
+      <reading_id>eo-l045-2-kings-4-25-37</reading_id>
    </bibleref>
    <bibleref>
       <liturgical_day>L045</liturgical_day>
@@ -11780,8 +11780,8 @@
       <osisref>2Kgs.4.26</osisref>
       <spoken>het tweede boek koningen</spoken>
       <localbook>2 kon</localbook>
-      <chapterversereference>4:25-38</chapterversereference>
-      <reading_id>eo-l045-2-kings-4-25-38</reading_id>
+      <chapterversereference>4:25-37</chapterversereference>
+      <reading_id>eo-l045-2-kings-4-25-37</reading_id>
    </bibleref>
    <bibleref>
       <liturgical_day>L045</liturgical_day>
@@ -11798,8 +11798,8 @@
       <osisref>2Kgs.4.27</osisref>
       <spoken>het tweede boek koningen</spoken>
       <localbook>2 kon</localbook>
-      <chapterversereference>4:25-38</chapterversereference>
-      <reading_id>eo-l045-2-kings-4-25-38</reading_id>
+      <chapterversereference>4:25-37</chapterversereference>
+      <reading_id>eo-l045-2-kings-4-25-37</reading_id>
    </bibleref>
    <bibleref>
       <liturgical_day>L045</liturgical_day>
@@ -11816,8 +11816,8 @@
       <osisref>2Kgs.4.28</osisref>
       <spoken>het tweede boek koningen</spoken>
       <localbook>2 kon</localbook>
-      <chapterversereference>4:25-38</chapterversereference>
-      <reading_id>eo-l045-2-kings-4-25-38</reading_id>
+      <chapterversereference>4:25-37</chapterversereference>
+      <reading_id>eo-l045-2-kings-4-25-37</reading_id>
    </bibleref>
    <bibleref>
       <liturgical_day>L045</liturgical_day>
@@ -11834,8 +11834,8 @@
       <osisref>2Kgs.4.29</osisref>
       <spoken>het tweede boek koningen</spoken>
       <localbook>2 kon</localbook>
-      <chapterversereference>4:25-38</chapterversereference>
-      <reading_id>eo-l045-2-kings-4-25-38</reading_id>
+      <chapterversereference>4:25-37</chapterversereference>
+      <reading_id>eo-l045-2-kings-4-25-37</reading_id>
    </bibleref>
    <bibleref>
       <liturgical_day>L045</liturgical_day>
@@ -11852,8 +11852,8 @@
       <osisref>2Kgs.4.30</osisref>
       <spoken>het tweede boek koningen</spoken>
       <localbook>2 kon</localbook>
-      <chapterversereference>4:25-38</chapterversereference>
-      <reading_id>eo-l045-2-kings-4-25-38</reading_id>
+      <chapterversereference>4:25-37</chapterversereference>
+      <reading_id>eo-l045-2-kings-4-25-37</reading_id>
    </bibleref>
    <bibleref>
       <liturgical_day>L045</liturgical_day>
@@ -11870,8 +11870,8 @@
       <osisref>2Kgs.4.31</osisref>
       <spoken>het tweede boek koningen</spoken>
       <localbook>2 kon</localbook>
-      <chapterversereference>4:25-38</chapterversereference>
-      <reading_id>eo-l045-2-kings-4-25-38</reading_id>
+      <chapterversereference>4:25-37</chapterversereference>
+      <reading_id>eo-l045-2-kings-4-25-37</reading_id>
    </bibleref>
    <bibleref>
       <liturgical_day>L045</liturgical_day>
@@ -11888,8 +11888,8 @@
       <osisref>2Kgs.4.32</osisref>
       <spoken>het tweede boek koningen</spoken>
       <localbook>2 kon</localbook>
-      <chapterversereference>4:25-38</chapterversereference>
-      <reading_id>eo-l045-2-kings-4-25-38</reading_id>
+      <chapterversereference>4:25-37</chapterversereference>
+      <reading_id>eo-l045-2-kings-4-25-37</reading_id>
    </bibleref>
    <bibleref>
       <liturgical_day>L045</liturgical_day>
@@ -11906,8 +11906,8 @@
       <osisref>2Kgs.4.33</osisref>
       <spoken>het tweede boek koningen</spoken>
       <localbook>2 kon</localbook>
-      <chapterversereference>4:25-38</chapterversereference>
-      <reading_id>eo-l045-2-kings-4-25-38</reading_id>
+      <chapterversereference>4:25-37</chapterversereference>
+      <reading_id>eo-l045-2-kings-4-25-37</reading_id>
    </bibleref>
    <bibleref>
       <liturgical_day>L045</liturgical_day>
@@ -11924,8 +11924,8 @@
       <osisref>2Kgs.4.34</osisref>
       <spoken>het tweede boek koningen</spoken>
       <localbook>2 kon</localbook>
-      <chapterversereference>4:25-38</chapterversereference>
-      <reading_id>eo-l045-2-kings-4-25-38</reading_id>
+      <chapterversereference>4:25-37</chapterversereference>
+      <reading_id>eo-l045-2-kings-4-25-37</reading_id>
    </bibleref>
    <bibleref>
       <liturgical_day>L045</liturgical_day>
@@ -11942,8 +11942,8 @@
       <osisref>2Kgs.4.35</osisref>
       <spoken>het tweede boek koningen</spoken>
       <localbook>2 kon</localbook>
-      <chapterversereference>4:25-38</chapterversereference>
-      <reading_id>eo-l045-2-kings-4-25-38</reading_id>
+      <chapterversereference>4:25-37</chapterversereference>
+      <reading_id>eo-l045-2-kings-4-25-37</reading_id>
    </bibleref>
    <bibleref>
       <liturgical_day>L045</liturgical_day>
@@ -11960,8 +11960,8 @@
       <osisref>2Kgs.4.36</osisref>
       <spoken>het tweede boek koningen</spoken>
       <localbook>2 kon</localbook>
-      <chapterversereference>4:25-38</chapterversereference>
-      <reading_id>eo-l045-2-kings-4-25-38</reading_id>
+      <chapterversereference>4:25-37</chapterversereference>
+      <reading_id>eo-l045-2-kings-4-25-37</reading_id>
    </bibleref>
    <bibleref>
       <liturgical_day>L045</liturgical_day>
@@ -11978,26 +11978,8 @@
       <osisref>2Kgs.4.37</osisref>
       <spoken>het tweede boek koningen</spoken>
       <localbook>2 kon</localbook>
-      <chapterversereference>4:25-38</chapterversereference>
-      <reading_id>eo-l045-2-kings-4-25-38</reading_id>
-   </bibleref>
-   <bibleref>
-      <liturgical_day>L045</liturgical_day>
-      <day>Thursday after Fourth Sunday of Lent</day>
-      <form>eo</form>
-      <reading>epistle</reading>
-      <obligation>n</obligation>
-      <abridged>n</abridged>
-      <skipped>n</skipped>
-      <osisbook>2Kgs</osisbook>
-      <canbook>12</canbook>
-      <chapter>4</chapter>
-      <verse>38</verse>
-      <osisref>2Kgs.4.38</osisref>
-      <spoken>het tweede boek koningen</spoken>
-      <localbook>2 kon</localbook>
-      <chapterversereference>4:25-38</chapterversereference>
-      <reading_id>eo-l045-2-kings-4-25-38</reading_id>
+      <chapterversereference>4:25-37</chapterversereference>
+      <reading_id>eo-l045-2-kings-4-25-37</reading_id>
    </bibleref>
    <bibleref>
       <liturgical_day>L046</liturgical_day>
@@ -13071,12 +13053,12 @@
       <skipped>y</skipped>
       <osisbook>Lev</osisbook>
       <canbook>3</canbook>
-      <chapter>3</chapter>
-      <verse>10</verse>
-      <osisref>Lev.3.10</osisref>
+      <chapter>19</chapter>
+      <verse>3</verse>
+      <osisref>Lev.19.3</osisref>
       <spoken>leviticus</spoken>
       <localbook>lev</localbook>
-      <chapterversereference>3:10,20:24</chapterversereference>
+      <chapterversereference>19:3-10,20-24</chapterversereference>
       <reading_id>eo-l054-lev-19-1-2-11-19-25</reading_id>
    </bibleref>
    <bibleref>
@@ -13089,12 +13071,210 @@
       <skipped>y</skipped>
       <osisbook>Lev</osisbook>
       <canbook>3</canbook>
-      <chapter>20</chapter>
-      <verse>24</verse>
-      <osisref>Lev.20.24</osisref>
+      <chapter>19</chapter>
+      <verse>4</verse>
+      <osisref>Lev.19.4</osisref>
       <spoken>leviticus</spoken>
       <localbook>lev</localbook>
-      <chapterversereference>3:10,20:24</chapterversereference>
+      <chapterversereference>19:3-10,20-24</chapterversereference>
+      <reading_id>eo-l054-lev-19-1-2-11-19-25</reading_id>
+   </bibleref>
+   <bibleref>
+      <liturgical_day>L054</liturgical_day>
+      <day>Wednesday after Passion Sunday</day>
+      <form>eo</form>
+      <reading>epistle</reading>
+      <obligation>n</obligation>
+      <abridged>n</abridged>
+      <skipped>y</skipped>
+      <osisbook>Lev</osisbook>
+      <canbook>3</canbook>
+      <chapter>19</chapter>
+      <verse>5</verse>
+      <osisref>Lev.19.5</osisref>
+      <spoken>leviticus</spoken>
+      <localbook>lev</localbook>
+      <chapterversereference>19:3-10,20-24</chapterversereference>
+      <reading_id>eo-l054-lev-19-1-2-11-19-25</reading_id>
+   </bibleref>
+   <bibleref>
+      <liturgical_day>L054</liturgical_day>
+      <day>Wednesday after Passion Sunday</day>
+      <form>eo</form>
+      <reading>epistle</reading>
+      <obligation>n</obligation>
+      <abridged>n</abridged>
+      <skipped>y</skipped>
+      <osisbook>Lev</osisbook>
+      <canbook>3</canbook>
+      <chapter>19</chapter>
+      <verse>6</verse>
+      <osisref>Lev.19.6</osisref>
+      <spoken>leviticus</spoken>
+      <localbook>lev</localbook>
+      <chapterversereference>19:3-10,20-24</chapterversereference>
+      <reading_id>eo-l054-lev-19-1-2-11-19-25</reading_id>
+   </bibleref>
+   <bibleref>
+      <liturgical_day>L054</liturgical_day>
+      <day>Wednesday after Passion Sunday</day>
+      <form>eo</form>
+      <reading>epistle</reading>
+      <obligation>n</obligation>
+      <abridged>n</abridged>
+      <skipped>y</skipped>
+      <osisbook>Lev</osisbook>
+      <canbook>3</canbook>
+      <chapter>19</chapter>
+      <verse>7</verse>
+      <osisref>Lev.19.7</osisref>
+      <spoken>leviticus</spoken>
+      <localbook>lev</localbook>
+      <chapterversereference>19:3-10,20-24</chapterversereference>
+      <reading_id>eo-l054-lev-19-1-2-11-19-25</reading_id>
+   </bibleref>
+   <bibleref>
+      <liturgical_day>L054</liturgical_day>
+      <day>Wednesday after Passion Sunday</day>
+      <form>eo</form>
+      <reading>epistle</reading>
+      <obligation>n</obligation>
+      <abridged>n</abridged>
+      <skipped>y</skipped>
+      <osisbook>Lev</osisbook>
+      <canbook>3</canbook>
+      <chapter>19</chapter>
+      <verse>8</verse>
+      <osisref>Lev.19.8</osisref>
+      <spoken>leviticus</spoken>
+      <localbook>lev</localbook>
+      <chapterversereference>19:3-10,20-24</chapterversereference>
+      <reading_id>eo-l054-lev-19-1-2-11-19-25</reading_id>
+   </bibleref>
+   <bibleref>
+      <liturgical_day>L054</liturgical_day>
+      <day>Wednesday after Passion Sunday</day>
+      <form>eo</form>
+      <reading>epistle</reading>
+      <obligation>n</obligation>
+      <abridged>n</abridged>
+      <skipped>y</skipped>
+      <osisbook>Lev</osisbook>
+      <canbook>3</canbook>
+      <chapter>19</chapter>
+      <verse>9</verse>
+      <osisref>Lev.19.9</osisref>
+      <spoken>leviticus</spoken>
+      <localbook>lev</localbook>
+      <chapterversereference>19:3-10,20-24</chapterversereference>
+      <reading_id>eo-l054-lev-19-1-2-11-19-25</reading_id>
+   </bibleref>
+   <bibleref>
+      <liturgical_day>L054</liturgical_day>
+      <day>Wednesday after Passion Sunday</day>
+      <form>eo</form>
+      <reading>epistle</reading>
+      <obligation>n</obligation>
+      <abridged>n</abridged>
+      <skipped>y</skipped>
+      <osisbook>Lev</osisbook>
+      <canbook>3</canbook>
+      <chapter>19</chapter>
+      <verse>10</verse>
+      <osisref>Lev.19.10</osisref>
+      <spoken>leviticus</spoken>
+      <localbook>lev</localbook>
+      <chapterversereference>19:3-10,20-24</chapterversereference>
+      <reading_id>eo-l054-lev-19-1-2-11-19-25</reading_id>
+   </bibleref>
+   <bibleref>
+      <liturgical_day>L054</liturgical_day>
+      <day>Wednesday after Passion Sunday</day>
+      <form>eo</form>
+      <reading>epistle</reading>
+      <obligation>n</obligation>
+      <abridged>n</abridged>
+      <skipped>y</skipped>
+      <osisbook>Lev</osisbook>
+      <canbook>3</canbook>
+      <chapter>19</chapter>
+      <verse>20</verse>
+      <osisref>Lev.19.20</osisref>
+      <spoken>leviticus</spoken>
+      <localbook>lev</localbook>
+      <chapterversereference>19:3-10,20-24</chapterversereference>
+      <reading_id>eo-l054-lev-19-1-2-11-19-25</reading_id>
+   </bibleref>
+   <bibleref>
+      <liturgical_day>L054</liturgical_day>
+      <day>Wednesday after Passion Sunday</day>
+      <form>eo</form>
+      <reading>epistle</reading>
+      <obligation>n</obligation>
+      <abridged>n</abridged>
+      <skipped>y</skipped>
+      <osisbook>Lev</osisbook>
+      <canbook>3</canbook>
+      <chapter>19</chapter>
+      <verse>21</verse>
+      <osisref>Lev.19.21</osisref>
+      <spoken>leviticus</spoken>
+      <localbook>lev</localbook>
+      <chapterversereference>19:3-10,20-24</chapterversereference>
+      <reading_id>eo-l054-lev-19-1-2-11-19-25</reading_id>
+   </bibleref>
+   <bibleref>
+      <liturgical_day>L054</liturgical_day>
+      <day>Wednesday after Passion Sunday</day>
+      <form>eo</form>
+      <reading>epistle</reading>
+      <obligation>n</obligation>
+      <abridged>n</abridged>
+      <skipped>y</skipped>
+      <osisbook>Lev</osisbook>
+      <canbook>3</canbook>
+      <chapter>19</chapter>
+      <verse>22</verse>
+      <osisref>Lev.19.22</osisref>
+      <spoken>leviticus</spoken>
+      <localbook>lev</localbook>
+      <chapterversereference>19:3-10,20-24</chapterversereference>
+      <reading_id>eo-l054-lev-19-1-2-11-19-25</reading_id>
+   </bibleref>
+   <bibleref>
+      <liturgical_day>L054</liturgical_day>
+      <day>Wednesday after Passion Sunday</day>
+      <form>eo</form>
+      <reading>epistle</reading>
+      <obligation>n</obligation>
+      <abridged>n</abridged>
+      <skipped>y</skipped>
+      <osisbook>Lev</osisbook>
+      <canbook>3</canbook>
+      <chapter>19</chapter>
+      <verse>23</verse>
+      <osisref>Lev.19.23</osisref>
+      <spoken>leviticus</spoken>
+      <localbook>lev</localbook>
+      <chapterversereference>19:3-10,20-24</chapterversereference>
+      <reading_id>eo-l054-lev-19-1-2-11-19-25</reading_id>
+   </bibleref>
+   <bibleref>
+      <liturgical_day>L054</liturgical_day>
+      <day>Wednesday after Passion Sunday</day>
+      <form>eo</form>
+      <reading>epistle</reading>
+      <obligation>n</obligation>
+      <abridged>n</abridged>
+      <skipped>y</skipped>
+      <osisbook>Lev</osisbook>
+      <canbook>3</canbook>
+      <chapter>19</chapter>
+      <verse>24</verse>
+      <osisref>Lev.19.24</osisref>
+      <spoken>leviticus</spoken>
+      <localbook>lev</localbook>
+      <chapterversereference>19:3-10,20-24</chapterversereference>
       <reading_id>eo-l054-lev-19-1-2-11-19-25</reading_id>
    </bibleref>
    <bibleref>

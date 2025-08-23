@@ -745,7 +745,7 @@
   <L045>
     <liturgical_day>L045</liturgical_day>
     <day>Thursday after Fourth Sunday of Lent</day>
-    <ref>2 Kings 4:25-38</ref>
+    <ref>2 Kings 4:25-37</ref>
     <abridged />
     <skipped />
     <form>eo</form>
@@ -807,7 +807,7 @@
     <day>Wednesday after Passion Sunday</day>
     <ref>Lev 19:1-2, 11-19, 25</ref>
     <abridged />
-    <skipped>Lev 3-10, 20-24</skipped>
+    <skipped>Lev 19:3-10, 20-24</skipped>
     <form>eo</form>
     <reading>epistle</reading>
     <obligation>n</obligation>
