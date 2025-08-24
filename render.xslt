@@ -67,6 +67,20 @@
               <div class="content">
                   <xsl:apply-templates select="//bibleref"/><!-- testing limited number of books -->
               </div>
+              <script>
+                (function() {
+                  const today = new Date();
+                  const yyyy = today.getFullYear();
+                  const mm = String(today.getMonth() + 1).padStart(2, "0");
+                  const dd = String(today.getDate()).padStart(2, "0");
+                  const id = `${yyyy}-${mm}-${dd}`;
+
+                  const el = document.getElementById(id);
+                  if (el) {
+                    el.style.display = "inline"; // or "block", depending on your layout
+                  }
+                })();
+              </script>
           </body>
       </html>
   </xsl:template>

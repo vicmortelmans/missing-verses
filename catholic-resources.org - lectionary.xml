@@ -945,57 +945,7 @@
   <P007>
     <liturgical_day>P007</liturgical_day>
     <day>Holy Saturday - Easter Vigil</day>
-    <ref>Gen 5:32-8:21</ref>
-    <abridged />
-    <skipped />
-    <form>eo</form>
-    <reading>epistle</reading>
-    <obligation>y</obligation>
-  </P007>
-  <P007>
-    <liturgical_day>P007</liturgical_day>
-    <day>Holy Saturday - Easter Vigil</day>
-    <ref>Gen 22:1-19</ref>
-    <abridged />
-    <skipped />
-    <form>eo</form>
-    <reading>epistle</reading>
-    <obligation>y</obligation>
-  </P007>
-  <P007>
-    <liturgical_day>P007</liturgical_day>
-    <day>Holy Saturday - Easter Vigil</day>
     <ref>Exod 14:24-31; 15:1a</ref>
-    <abridged />
-    <skipped />
-    <form>eo</form>
-    <reading>epistle</reading>
-    <obligation>y</obligation>
-  </P007>
-  <P007>
-    <liturgical_day>P007</liturgical_day>
-    <day>Holy Saturday - Easter Vigil</day>
-    <ref>Isa 54:17; 55:1-11</ref>
-    <abridged />
-    <skipped />
-    <form>eo</form>
-    <reading>epistle</reading>
-    <obligation>y</obligation>
-  </P007>
-  <P007>
-    <liturgical_day>P007</liturgical_day>
-    <day>Holy Saturday - Easter Vigil</day>
-    <ref>Baruch 3:9-38</ref>
-    <abridged />
-    <skipped />
-    <form>eo</form>
-    <reading>epistle</reading>
-    <obligation>y</obligation>
-  </P007>
-  <P007>
-    <liturgical_day>P007</liturgical_day>
-    <day>Holy Saturday - Easter Vigil</day>
-    <ref>Ezek 37:1-14</ref>
     <abridged />
     <skipped />
     <form>eo</form>
@@ -1015,37 +965,7 @@
   <P007>
     <liturgical_day>P007</liturgical_day>
     <day>Holy Saturday - Easter Vigil</day>
-    <ref>Exod 12:1-11</ref>
-    <abridged />
-    <skipped />
-    <form>eo</form>
-    <reading>epistle</reading>
-    <obligation>y</obligation>
-  </P007>
-  <P007>
-    <liturgical_day>P007</liturgical_day>
-    <day>Holy Saturday - Easter Vigil</day>
-    <ref>Jonah 3:1-10</ref>
-    <abridged />
-    <skipped />
-    <form>eo</form>
-    <reading>epistle</reading>
-    <obligation>y</obligation>
-  </P007>
-  <P007>
-    <liturgical_day>P007</liturgical_day>
-    <day>Holy Saturday - Easter Vigil</day>
     <ref>Deut 31:22-30</ref>
-    <abridged />
-    <skipped />
-    <form>eo</form>
-    <reading>epistle</reading>
-    <obligation>y</obligation>
-  </P007>
-  <P007>
-    <liturgical_day>P007</liturgical_day>
-    <day>Holy Saturday - Easter Vigil</day>
-    <ref>Dan 3:1-24</ref>
     <abridged />
     <skipped />
     <form>eo</form>
@@ -5248,6 +5168,36 @@
     <skipped />
     <form>of</form>
     <reading>first reading</reading>
+    <obligation>n</obligation>
+  </Z1102>
+  <Z1102>
+    <liturgical_day>Z1102</liturgical_day>
+    <day>Nov 2: Commemoration of All Souls (Option 3)</day>
+    <ref>Rom 6:3-9</ref>
+    <abridged />
+    <skipped />
+    <form>of</form>
+    <reading>second reading</reading>
+    <obligation>n</obligation>
+  </Z1102>
+  <Z1102>
+    <liturgical_day>Z1102</liturgical_day>
+    <day>Nov 2: Commemoration of All Souls (Option 3)</day>
+    <ref>Jn 6:37-40</ref>
+    <abridged />
+    <skipped />
+    <form>of</form>
+    <reading>gospel</reading>
+    <obligation>n</obligation>
+  </Z1102>
+  <Z1102>
+    <liturgical_day>Z1102</liturgical_day>
+    <day>Nov 2: Commemoration of All Souls (Option 3)</day>
+    <ref>John 14:1-6</ref>
+    <abridged />
+    <skipped />
+    <form>of</form>
+    <reading>gospel</reading>
     <obligation>n</obligation>
   </Z1102>
   <Z1109>

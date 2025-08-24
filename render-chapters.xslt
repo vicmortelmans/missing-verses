@@ -131,7 +131,7 @@
                   <span class="sentence">
                       <xsl:variable name="views">
                           <xsl:if test="form/in[not(skipped='y')]">any </xsl:if>
-                          <xsl:if test="form[@form='eo']/in and not(form[@form='of']/in[not(skipped='y')])">censored </xsl:if>
+                          <xsl:if test="form[@form='eo']/in[not(skipped='y')] and not(form[@form='of']/in[not(skipped='y')])"><xsl:message>censored: <xsl:value-of select="osisbook"/> <xsl:value-of select="chapter"/>:<xsl:value-of select="verse"/></xsl:message>censored </xsl:if>
                           <xsl:for-each select="form[@form='of']/in">
                               <xsl:variable name="color">
                                   <xsl:choose>
