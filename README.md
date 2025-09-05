@@ -16,4 +16,8 @@ java net.sf.saxon.Transform -xsl:render.xslt -s:organized.xml -o:rendered.html
 
 java net.sf.saxon.Transform -xsl:render-chapters.xslt -s:organized.xml -o:dummy.xml
 
+java net.sf.saxon.Transform -xsl:missing-md.xslt -s:organized.xml -o:verdonkermaand.md
+
+pandoc -f markdown -t pdf verdonkermaand.md > verdonkermaand.pdf
+
 ./deploy
