@@ -8,20 +8,20 @@
 
   <xsl:template match="/">
       <xsl:text>---&#10;</xsl:text>
-      <xsl:text>title: VERDONKERMAANDE VERZEN&#10;</xsl:text>
+      <xsl:text>title: VERDONKER-MAANDE VERZEN&#10;</xsl:text>
       <xsl:text>author: gelovenleren.net&#10;</xsl:text>
       <xsl:text>lang: nl&#10;</xsl:text>
       <!--xsl:text>classoption:&#10;</xsl:text>
       <xsl:text>- twocolumn&#10;</xsl:text-->
-      <xsl:text>geometry: twoside, paperheight=120mm, paperwidth=90mm, top=9.0mm, bottom=9.0mm, left=9.0mm, right=9.0mm&#10;</xsl:text>
+      <xsl:text>geometry: twoside, paperheight=129mm, paperwidth=65mm, top=5.0mm, bottom=5.0mm, left=5.0mm, right=5.0mm&#10;</xsl:text>
       <xsl:text>toc: false&#10;</xsl:text>
-      <xsl:text>header-includes: |&#10;</xsl:text>
+      <!--xsl:text>header-includes: |&#10;</xsl:text>
       <xsl:text>    \usepackage{fancyhdr}&#10;</xsl:text>
       <xsl:text>    \pagestyle{fancy}&#10;</xsl:text>
       <xsl:text>    \fancyhead[CO,CE]{\leftmark}&#10;</xsl:text>
       <xsl:text>    \fancyfoot[CE,CO]{\thepage}&#10;</xsl:text>
       <xsl:text>    \fancyhead[LO,LE,RO,RE]{}&#10;</xsl:text>
-      <xsl:text>    \fancyfoot[LO,LE,RO,RE]{}&#10;</xsl:text>
+      <xsl:text>    \fancyfoot[LO,LE,RO,RE]{}&#10;</xsl:text-->
       <xsl:text>...&#10;</xsl:text>
       <xsl:text>&#10;</xsl:text>
       <xsl:apply-templates select="data/book/chapter"/><!-- testing limited number of books -->
@@ -32,13 +32,13 @@
         <xsl:variable name="book-long" select="bibleref[1]/spoken"/>
         <!-- Book title -->
         <xsl:text>&#10;</xsl:text>
-        <xsl:text># </xsl:text><xsl:value-of select="$book-long"/>, hoofdstuk <xsl:value-of select="bibleref[1]/chapter"/>
+        <xsl:text># </xsl:text><xsl:value-of select="$book-long"/>, <xsl:value-of select="bibleref[1]/chapter"/>
         <xsl:text>&#10;&#10;</xsl:text>
         <!-- Verses -->
         <xsl:for-each select="bibleref">
           <xsl:sort select="verse" data-type="number"/>
           <xsl:if test="form[@form='eo']/in[not(skipped='y')] and not(form[@form='of']/in[not(skipped='y')])">
-              <xsl:text>&lt;sup&gt;</xsl:text><xsl:value-of select="verse"/><xsl:text> </xsl:text><xsl:text>&lt;/sup&gt;</xsl:text>
+              <xsl:text>^</xsl:text><xsl:value-of select="verse"/><xsl:text></xsl:text><xsl:text>^ </xsl:text>
               <xsl:value-of select="text"/>
               <xsl:text>&#10;</xsl:text>
           </xsl:if>

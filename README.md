@@ -20,4 +20,6 @@ java net.sf.saxon.Transform -xsl:missing-md.xslt -s:organized.xml -o:verdonkerma
 
 pandoc -f markdown -t pdf verdonkermaand.md > verdonkermaand.pdf
 
+katern -o verdonkermaand-a5.pdf -b 1 -l 2 -m a5 verdonkermaand.pdf
+
 ./deploy
