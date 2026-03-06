@@ -2,4 +2,4 @@
 cp rendered.html html/index.html
 cp *.css html
 cd html
-rsync -aP ./ vps@37.97.145.69:/var/www/missing.gelovenleren.net --delete
+rsync -aP ./ <user>@<host>:<path> --delete
